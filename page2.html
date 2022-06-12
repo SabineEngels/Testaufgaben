@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/styles/style.css">
+    <title>DemoStore</title>
+</head>
+
+<body>
+    <hr>
+    <div class="alles">
+        <div class="col1">
+            <div class="left">
+                <span class="schrift">Versandkostenfreie Lieferung</span>
+            </div>
+            <div class="right">
+                <span class="schrift">Link 1</span>
+                <span class="schrift">Link 2</span>
+                <span class="schrift">Link 3</span>
+                <span class="schrift">Link 4</span>
+                <span class="schrift">Link 5</span>
+                <span class="schrift">Link 6</span>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="alles">
+        <div class="col2">
+            <div class="home">
+                <span>HOME</span>
+                <span>HERREN</span>
+                <span class="women">DAMEN</span>
+                <span>KINDER</span>
+            </div>
+            <div class="store">
+                <p class="demo">Demo</p>
+                <p class="store">store</p>
+            </div>
+            <div class="nutzer">
+                
+                <span>ANMELDEN</span>
+                <span>MEIN KONTO</span>
+                <span>WARENKORB</span>
+            </div>
+        </div>
+        <div class="col3">
+            
+            <span class="right">
+                <input type="image" src="src/images/lupe.png" id="lupe" class="lupe">
+                <form> 
+                <span id="inputSearch">
+                    <input autocomplete="off" ; id="userInputSearch" type="text" placeholder="Search..." class="enter" />
+                    
+                    <input type="button" class="search" value=" Search" />
+                </span>
+                <img src="src/images/location.jpg" class="location">
+                <img src="src/images/user.png" class="user">
+                <img src="src/images/cart.png" class="cart">
+            </form>
+        </span>
+        </div>
+    </div>
+    <hr>
+    <img src="src/images/adolescent-casual-cute-elegant-428338.jpg" class="center">
+    <span class="center">Menge auswählen:</span>
+
+    <select id="choice">
+        <option>––––</option>
+        <option value="Menge">1</option>
+        <option value="Menge">2</option>
+
+    </select>
+    
+    </div>
+
+
+
+</body>
+<script>
+    var r = document.querySelector(':root');
+    let clickButton = document.querySelector(".lupe");
+    clickButton.addEventListener("click", buttonClick);
+
+    function buttonClick() {
+        r.style.setProperty('--opacity', 1  );
+    }
+
+    document.querySelector("#choice").onchange = function () {
+            let msg = document.querySelector("#choice").value;
+        }
+</script>
+</html>

@@ -88,6 +88,11 @@ font-size: small;
     width: 50%;
     height: 500px;
     width: auto;
+    text-align: center;
+}
+
+.center {
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .demo {
@@ -164,5 +169,9 @@ font-size: small;
 #cart {
     height: 35px;
     width: 35px;
+}
+
+.women {
+    font-weight: bold;
 }
 
