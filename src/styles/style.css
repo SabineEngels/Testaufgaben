@@ -1,3 +1,7 @@
+:root {
+    --opacity: 0;
+}
+
 .alles {
     margin-left: 10%;
     margin-right: 10%;
@@ -12,8 +16,25 @@
             
 }
 
+.col2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+        
+}
+
+.col3 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}
+
 .left {
 text-align: right;
+
 }
 
 .link {
@@ -31,14 +52,9 @@ text-align: right;
     flex-direction: row;
     justify-content: right;
     gap: 2%;
+    
 }
 
-.col2 {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-        
-}
 
 .home {
         flex: 1;
@@ -46,11 +62,13 @@ text-align: right;
 flex-direction: row;
 justify-content: left;
 gap: 2%;
+font-size: small;
 }
 
 .store {
         display: flex;
         flex-direction: row;
+        font-size: larger;
 
  }
 
@@ -60,6 +78,7 @@ gap: 2%;
         flex-direction: row;
         justify-content: right;
         gap: 2%;
+        font-size: small;
     }
 
 .center {
@@ -76,28 +95,74 @@ gap: 2%;
     font-size: larger;
 }
 
-.store{
-    font-size: larger;
-}
 
 .alles {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.left {
+
+
+.icons {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    gap: 2%;
+}
+
+
+.cart {
+    height: 50px;
+    width: 50px;
+}
+
+.user {
+    height: 50px;
+    width: 50px;
+}
+
+.location {
+    height: 50px;
+        width: 50px ;
+}
+
+#lupe {
+    height: 50px;
+    width: 50px;
+}
+
+#button {
+    border: none;
+    background-color: white;
+}
+
+.schrift {
     font-size: x-small;
-    color: rgb(197, 194, 194);
+        color: rgb(197, 194, 194);
 }
 
-.right {
-    font-size: x-small;
-    color: rgb(197, 194, 194);
+
+#inputSearch {
+    transition: all;
+    transition-duration: 500ms;
+    opacity: var(--opacity);
+
 }
 
-.home {
-    font-size: small;
+
+#location {
+    height: 35px;
+    width: 35px;
 }
 
-.nutzer {
-    font-size: small;
+#user {
+    height: 70px;
+    width: 65px;
+    margin-top: 10px;
 }
+
+#cart {
+    height: 35px;
+    width: 35px;
+}
+
